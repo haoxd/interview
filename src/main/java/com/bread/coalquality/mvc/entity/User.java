@@ -26,13 +26,10 @@ public class User extends Model<User>{
     @TableId(value = "id",type = IdType.ASSIGN_ID)
     private Long id;
 
-    @NotBlank(message = "名字不可为空")
-    @Length(min = 2 ,max = 6 ,message = "名字为2-6位")
+
     @TableField(value = "username")
     private String userName;
 
-    @NotBlank(message = "密码不可为空")
-    @Length(min = 8 ,max = 14 ,message = "密码位8-14位")
     @TableField(value = "password")
     private String passWord;
 }

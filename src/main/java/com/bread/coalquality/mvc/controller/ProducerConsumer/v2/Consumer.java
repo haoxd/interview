@@ -28,10 +28,18 @@ public class Consumer implements Runnable {
     @Override
     public void run() {
         try {
+
             dataBuffer.take();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+    }
+
+    public static void main(String[] args) {
+
+        int i = "test".hashCode();
+        System.out.println(1%50);
 
     }
 }

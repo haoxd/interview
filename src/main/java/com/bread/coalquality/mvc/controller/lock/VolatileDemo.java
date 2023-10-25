@@ -1,5 +1,6 @@
 package com.bread.coalquality.mvc.controller.lock;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.concurrent.TimeUnit;
@@ -21,6 +22,7 @@ import java.util.stream.LongStream;
  * @Author: haoxd
  * @Version: 1.0
  */
+@Slf4j
 public class VolatileDemo {
 
 

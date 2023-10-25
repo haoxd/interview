@@ -44,11 +44,7 @@ public class UserController {
         return map;
     }
 
-    public static void main(String[] args) {
 
-
-        new HashMap<>();
-    }
 
 
 }

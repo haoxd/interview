@@ -1,5 +1,9 @@
 package com.bread.coalquality.mvc.controller.aqs;
 
+import cn.hutool.core.util.ArrayUtil;
+import com.google.common.collect.Lists;
+
+import java.util.ArrayList;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -70,6 +74,14 @@ public class AQSDemo {
     private static Lock lock = new ReentrantLock();
 
     public static void main(String[] args) {
+
+        ArrayList<Integer> integers = Lists.newArrayList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+        integers.forEach(integer -> {
+            if(integer==5){
+                return;
+            }
+            System.out.println(integer);
+        });
 
     }
 }

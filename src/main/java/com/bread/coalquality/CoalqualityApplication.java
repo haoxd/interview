@@ -1,5 +1,6 @@
 package com.bread.coalquality;
 
+import com.bread.coalquality.spring.applicationContextInitializer.TestApplicationContextInitializer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -13,6 +14,7 @@ public class CoalqualityApplication {
 
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(CoalqualityApplication.class);
+        app.addInitializers(new TestApplicationContextInitializer());
         app.run(args);
 
     }

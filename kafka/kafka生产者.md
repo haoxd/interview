@@ -9,6 +9,7 @@
             3 linger.ms 如果数据迟迟未达到 batch.size，sender 等待 linger.time之后就会发送数据。单位 ms，默认值是 0ms，表示没有延迟。生产环境建议该值大小为 5-100ms 之间。
             4 压缩类型 生产者发送的所有数据的压缩方式。默认是 none，也就是不压缩。支持压缩类型：none、gzip、snappy、lz4 和 zstd。
         }
+        
 - 数据生产环境可靠性acks  
     
         {
